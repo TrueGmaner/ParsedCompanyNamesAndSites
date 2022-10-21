@@ -1,7 +1,6 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 # Press Ctrl+F8 to toggle the breakpoint.
-import string
 
 import xlrd
 from selenium import webdriver
@@ -46,46 +45,3 @@ def readExcelTable():
 
 
 readExcelTable()
-
-
-
-
-
-
-
-
-
-
-# class Data:
-#     def __init__(self, name):
-#         self.name = name
-#         self.url = None
-#
-# def readExcelTable():
-#     r_Book = xlrd.open_workbook('CompanyNames.xls', formatting_info=True)
-#     r_Sheet = r_Book.sheet_by_index(0)
-#     dataArr = []
-#
-#     for i in range(0, 6):
-#         dataArr.append(Data(r_Sheet.cell_value(i, 0)))
-#         print(dataArr[i].name)
-#     return dataArr
-#
-# def convertData(dataArr):
-#     for i in range(0, (len(dataArr))):
-#         (Data)(dataArr[i]).url = "123"
-#         print(dataArr[i].url)
-#     return dataArr
-#
-# def writeData(dataArr):
-#     w_Book = xlwt.Workbook()
-#     sheet1 = w_Book.add_sheet('Лист1') #type: Workbook
-#
-#     for i in range(0, 6):
-#         w_Book.get_sheet(0).write(i, 0, dataArr[i].name)
-#         w_Book.get_sheet(0).write(i, 1, dataArr[i].url)
-#     w_Book.save('CompanyNames.xls')
-#
-# dataArr = readExcelTable()
-# dataArr2 = convertData(dataArr)
-# writeData(dataArr2)
